@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Age Calculator</title>
+  <link rel="stylesheet" href="age.css" />
+</head>
+<body>
+
+  <!-- Dark / Light Toggle -->
+  <div class="toggle" onclick="toggleTheme()">🌙</div>
+
+  <div class="card">
+    <h1>🎂 Age Calculator</h1>
+    <p>Enter your Date of Birth</p>
+
+    <input type="date" id="dob" />
+    <button onclick="calculateAge()" class="btn">Calculate Age</button>
+
+    <div class="div-box">
+      <div class="box">
+        <h2 id="years">-</h2>
+        <span>Years</span>
+      </div>
+
+      <div class="box">
+        <h2 id="months">-</h2>
+        <span>Months</span>
+      </div>
+
+      <div class="box">
+        <h2 id="days">-</h2>
+        <span>Days</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="age.js"></script>
+</body>
+</html>
